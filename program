@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int X,P,pd=0,totalsum=0;
+    
+    scanf("%d%d",&X,&P);
+    
+    if(X>=0 && X<=10000 && P>=0 &&P<=100)
+    {
+    while(X>1)
+    {
+        pd = (X *P)/100;
+        totalsum= totalsum+X;
+        X = X - pd;
+        
+       
+    }
+    }
+    else 
+    return 0;
+    
+    printf("%d",totalsum);
+
+    return 0;
+}
